@@ -18,7 +18,7 @@ export default class App extends Component{
     return(
       <Router showNavigationBar={false}> 
         <Scene key="root">
-          <Scene key="Auth" component={Auth} hideNavBar={true} initial={false}/>
+          <Scene key="Auth" component={Auth} hideNavBar={true} initial={true}/>
           <Scene key="Login" component={Login} title="Login" />
           <Scene key="Register" component={Register} title="Register" initial={false}/>
           <Scene key="RegisterSuccess" component={RegisterSuccess} initial={false} hideNavBar={true}/>
@@ -28,7 +28,7 @@ export default class App extends Component{
           <Scene key="QueueSuccess" component={QueueSuccess} hideNavBar={true} initial={false} />
           <Scene key="AfterQueue" component={AfterQueue} hideNavBar={true} initial={false} />
           <Scene key="OngoingQueue" component={OngoingQueue} hideNavBar={true} initial={false} />
-          <Scene key="CancelQueue" component={CancelQueue} hideNavBar={true} initial={true} />
+          <Scene key="CancelQueue" component={CancelQueue} hideNavBar={true} initial={false} />
         </Scene>
       </Router>
     );
